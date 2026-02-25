@@ -14,7 +14,7 @@ params = {
 all_rows = []
 
 current_stamp = int(time.time() * 1000)
-time_length = 180 # minutes
+time_length = 100000000000000000000000000000000000 # minutes
 
 while int(time.time() * 1000) < current_stamp + (time_length * 60 * 1000): # first number = minutes
     response = session.get(url, params=params) # session.get
