@@ -41,11 +41,3 @@ master_df = master_df.set_index("update_id")
 print(master_df)
 
 master_df.to_csv("aggregated_data.csv")
-    
-'''bid_level = pd.DataFrame(data["bids"], columns=["best_bid_price", "best_bid_qty"], dtype=float)
-print(bid_level)
-
-ask_level = pd.DataFrame(data["asks"], columns=["best_ask_price", "best_ask_qty"], dtype=float)
-ask_level["side"] = "ask"'''
-
-#print(pd.concat([bid_level, ask_level]).sort_values("price", ascending=False).to_string())
